@@ -27,13 +27,14 @@ public class TwoSum {
         System.out.println(arrayToStr(twoSum(y, 6)));
         System.out.println("Expected outcome is: [0, 2]");
     }
-//TODO: Using StringBuilder (OCA Ch. 3)
+
     public static String arrayToStr (int[] s) {
-        String array = "[";
+        StringBuilder array = new StringBuilder("[");
         for (int i = 0; i < s.length - 1; i++) {
-            array = array + s[i] + ", ";
+            array = array.append(s[i]).append(", ");
         }
-        array = array + s[s.length - 1] + "]";
-        return array;
+        array = array.append(s[s.length - 1]).append("]");
+        String strArray = array.toString();
+        return strArray;
     }
 }
