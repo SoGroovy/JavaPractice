@@ -1,6 +1,7 @@
 package ocpPrep.Ch3;
 
 //Generic type T is available anywhere within the class
+//Naming conventions for generics is UPPERCASE SINGLE letters
 public class GenericClasses <T>{
     private T contents;
     public T emptyCrate() {
