@@ -17,5 +17,5 @@ public class ColAdd {
     }
 }
 /*
-Lists allows duplicates while Sets do not
+List allows duplicates while Sets do not
  */
