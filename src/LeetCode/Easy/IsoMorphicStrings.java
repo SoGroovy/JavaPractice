@@ -23,24 +23,16 @@ public class IsoMorphicStrings {
 
     public static boolean isIsomorphic(String s, String t) {
         Map<Character, Character> charMapF = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            charMapF.put(s.charAt(i), t.charAt(i));
-        }
-        for (int i = 0; i < s.length(); i++) {
-            if (charMapF.get(s.charAt(i)) != t.charAt(i)) {
-                return false;
-            }
-        }
         Map<Character, Character> charMapB = new HashMap<>();
         for (int i = 0; i < s.length(); i++) {
+            charMapF.put(s.charAt(i), t.charAt(i));
             charMapB.put(t.charAt(i), s.charAt(i));
         }
-        for (int i = 0; i < t.length(); i++) {
-            if (charMapB.get(t.charAt(i)) != s.charAt(i)) {
+        for (int i = 0; i < s.length(); i++) {
+            if (charMapF.get(s.charAt(i)) != t.charAt(i) || charMapB.get(t.charAt(i)) != s.charAt(i)) {
                 return false;
             }
         }
-
         return true;
     }
 
