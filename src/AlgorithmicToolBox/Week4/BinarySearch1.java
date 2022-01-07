@@ -1,6 +1,6 @@
 package AlgorithmicToolBox.Week4;
 
-public class BinarySearch {
+public class BinarySearch1 {
     public static void main(String[] args) {
         test();
     }
