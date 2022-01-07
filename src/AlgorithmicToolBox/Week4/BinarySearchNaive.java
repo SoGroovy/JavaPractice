@@ -17,7 +17,7 @@ public class BinarySearchNaive {
                 } else if (a[mid] < x) {
                     left = left + 1;
                 } else {
-                    right = right + 1;
+                    right = right - 1;
                 }
             }
 
@@ -46,8 +46,8 @@ public class BinarySearchNaive {
                 b[i] = scanner.nextInt();
             }
             for (int i = 0; i < m; i++) {
-                //replace with the call to binarySearch when implemented
-                System.out.print(linearSearch(a, b[i]) + " ");
+                System.out.print(binarySearch(a, b[i]) + " ");
+//                System.out.print(linearSearch(a, b[i]) + " ");
             }
         }
         static class FastScanner {
