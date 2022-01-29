@@ -7,8 +7,22 @@ public class WorkingWithVarargs {
 
     This syntax tells the compiler that fun( ) can be called with zero or more arguments.
     As a result, here, a is implicitly declared as an array of type int[].
+    This also means that Varargs uses array indexing.
+
+    Vararg parameters have to be last in the declaration of parameters; this also implies there can only be one vararg parameter per method.
      */
 
+    /*
+    public static void walk(int start, int... nums) {
+        System.out.println(nums.length);
+    }
+    public static void main(String[] args) {
+        walk(1);                        //0, only start is initialized
+        walk(1, 2);                     //1, one parameter for nums
+        walk(1, 2, 3);                  //2, two parameter for nums
+        walk(1, new int[] {4, 5});      //2, two parameters for nums; different format, but legal
+    }
+     */
 
     // A method that takes variable
     // number of integer arguments.
