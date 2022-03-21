@@ -1,4 +1,4 @@
-package OCAPrep.Ch3;
+package OCAPrep.Ch3.CreatingAndManipulatingStrings;
 /*
 Immutables only have getters.
 No way to change the value once it has been set.

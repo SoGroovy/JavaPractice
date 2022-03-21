@@ -1,6 +1,7 @@
-package OCAPrep.Ch3;
+package OCAPrep.Ch3.CreatingAndManipulatingStrings;
 
-import java.util.Locale;
+
+import OCAPrep.Ch3.CreatingAndManipulatingStrings.Concatenation;
 
 /*
 What is a String? A sequence of characters
@@ -91,6 +92,29 @@ public class Main {
 
         System.out.println("ABCDEF".toLowerCase());
         System.out.println("abcdef".toUpperCase());
+        System.out.println("abc123".toUpperCase());
+
+        /*equals(); equalsIgnoreCase() - checks to see if two string objects contains same characters, in the same order
+        Method signatures:
+        1) boolean equals(String str)
+        2) boolean equalsIgnoreCase(String str)
+         */
+
+        System.out.println("abc".equals("ABC"));
+        System.out.println("ABC".equals("ABC"));
+        System.out.println("abc".equalsIgnoreCase("ABC"));
+
+        /* trim() - removes all whitespace from beginning and end of string, but not in-between
+        Method signature:
+        1) public String trim()
+         */
+
+        System.out.println("a b c   ".trim());
+        System.out.println("\t    a b c \n \r".trim());
+
+        /* Method chaining - calling multiple methods on same string
+        You can call as many string methods as long as the result is still a string
+         */
     }
 
 

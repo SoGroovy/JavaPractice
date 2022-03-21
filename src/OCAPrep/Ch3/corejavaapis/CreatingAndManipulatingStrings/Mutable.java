@@ -1,4 +1,4 @@
-package OCAPrep.Ch3;
+package OCAPrep.Ch3.CreatingAndManipulatingStrings;
 
 public class Mutable {
     private String s;

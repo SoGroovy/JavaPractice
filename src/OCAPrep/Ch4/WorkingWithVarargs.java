@@ -52,4 +52,6 @@ public class WorkingWithVarargs {
         // no parameter
         fun();
     }
+
+
 }

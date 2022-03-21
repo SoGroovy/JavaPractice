@@ -1,4 +1,8 @@
-package OCAPrep.Ch3;
+package OCAPrep.Ch3.ArrayList;
+/*
+When you type the primitive type and Java will automatically convert it to its wrapper class. IE int --> Integer
+ */
+import OCAPrep.Ch3.CreatingAndManipulatingStrings.Main;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +18,7 @@ public class Autoboxing {
             System.out.print(age);
         }
     }
-    public static void main (String[] args) {
+    public static void main (Main[] args) {
         methodA();
     }
 }
