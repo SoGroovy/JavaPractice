@@ -1,7 +1,7 @@
 package LeetCode.Easy;
 
 import java.util.List;
-
+//123
 public class ListNode {
 
     int val;
